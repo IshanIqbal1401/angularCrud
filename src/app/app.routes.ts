@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { CustomerListComponent } from './customer/customer-list.component'
+export const routes: Routes = [
+    { path: '', component: CustomerListComponent },
+  { path: '**', redirectTo: '' }
+];
